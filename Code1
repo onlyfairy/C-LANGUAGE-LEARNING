@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+	int b, a;//已经定义好变量了，就不需要赋予值：b=0ect.
+	scanf_s("%d,%d", &b, &a);
+	int z = b + a;
+	printf("Z=%d\n",z);
+	return 0;
+}
