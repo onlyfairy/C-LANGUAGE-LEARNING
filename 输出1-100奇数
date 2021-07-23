@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+	//第一种方法
+	/*int i = 1;
+	while (i <= 100)
+	{
+		if (i % 2 == 1)
+		printf("奇数是%d ", i);
+		i++;
+	}*/
+
+	//第二种方法
+	int i = 1;
+	while (i <= 100)
+	{	
+		printf("%d ", i);
+		i+=2;
+	}
+	return 0;
+}
