@@ -1,0 +1,23 @@
+#include <stdio.h>
+//第一种
+int main()
+{
+	char a, b, c;
+	a = getchar();
+	b = getchar();
+	c = getchar();
+	putchar(a);
+	putchar(b);
+	putchar(c);
+	putchar('\n');
+	return 0;
+}
+
+//第二种，getchar可以作为表达式
+//putchar(getchar());
+//putchar(getchar());
+//putchar(getchar());
+//putchar('\n');
+
+//第三种，也可以在printf函数中输出刚接收的字符
+//printf("%c",getchar());
