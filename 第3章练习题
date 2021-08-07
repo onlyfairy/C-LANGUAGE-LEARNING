@@ -1,0 +1,77 @@
+//第2题+
+//#include <stdio.h>
+//
+//int main()
+//{
+//	double P1, P2, P3, P4, P5;
+//	double p1 = 1000;
+//	double r1 = 0.0414;
+//	double r2 = 0.0468;
+//	double r3 = 0.054;
+//	double r5 = 0.0585;
+//	double r = 0.0072;
+//	int y1 = 1;
+//	int y2 = 2;
+//	int y3 = 3;
+//	int y5 = 5;
+//	P1 = p1*(1 + y5*r5);
+//	P2 = p1*(1 + y2*r2)*(1+y3*r3);
+//	printf("一次存5年期=%lf\n", P1);
+//	printf("(2)=%lf\n", P2);
+//	return 0;
+//}
+//
+
+//第6题
+//#include <stdio.h>
+
+//int main()
+//{
+//	/*char c1 = 'C', c2 = 'h', c3 = 'i', c4 = 'n', c5 = 'a';
+//	printf("使用putchar输出：");
+//	putchar(c1);
+//	putchar(c2);
+//	putchar(c3);
+//	putchar(c4);
+//	putchar(c5);
+//	printf("\n");
+//	c1 = c1 + 4;
+//	c2 = c2 + 4;
+//	c3 = c3 + 4;
+//	c4 = c4 + 4;
+//	c5 = c5 + 4;
+//	printf("%c%c%c%c%c", c1, c2, c3, c4, c5);
+//	printf("\n");*/
+//	return 0;
+//}
+
+
+//第7题
+//#include <stdio.h>
+//
+//int main()
+//{
+//	float r, h, C, S;
+//	float pi = 3.14;
+//	scanf_s("%f %f", &r, &h);//scanf 后面不能加\n,这样你输入值时，敲回车就一直下一行
+//	C = pi * 2 * r;
+//	S = pi*r*r;
+//	printf("圆的周长：%5.2f\n圆的面积：%5.2f\n", C, S);
+//	return 0;
+//}
+
+
+//第8题
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int c1, c2;//int比char的储存的空间大，用int保险，具体情况而定
+//	c1 = getchar();
+//	c2 = getchar();
+//	putchar(c1);
+//	putchar(c2);
+//	printf("\n");
+//	printf("c1=%c\n c2=%c\n", c1, c2);//%c是c1想要输出字符，%d想要输出字符对应的ASCII码值
+//	return 0;
+//}
