@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>//strcmp的头文件
+#include <stdlib.h>//system的头文件
+
+int main()
+{
+	char input[20] = { 0 };
+	system("shutdown -s  -t 60");//-s 开始，-t 时间 以秒为单位
+again://goto语句的标志，到哪里
+	printf("你的电脑一分钟后即将关机，回答一个问题则就取消关机，若不然，敬请观看黑屏世界\n");
+	printf("问题：谁是世界上最帅的男人？\n");
+	scanf("%s", input);
+	if (strcmp(input, "李有才") == 0)//比较，==0则相等，字符串要加双引号
+	{
+		system("shutdown -a");//取消关机
+	}
+	else
+	{
+		goto again;//去哪里
+	}
+	return 0;
+}
