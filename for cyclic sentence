@@ -1,0 +1,38 @@
+int main01()
+{
+	int i;
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d\n", i);
+	}
+	return 0;
+}
+int main02()
+{
+	int i;
+	int sum = 0;
+	for (i = 0; i <= 100; i++)
+	{
+		sum = sum + i;
+	}
+	printf("sum of 100 is %d\n", sum);
+	return 0;
+}
+//敲7，从1到100内的数，凡是7or7的倍数需要敲桌子。
+int main()
+{
+	int i;
+	for (i = 0; i <= 100; i++)
+	{
+		if (i % 7 == 0 || i % 10 == 7 || i / 10 == 7)
+		{
+			printf("knock the desk ");
+		}
+		else
+		{
+			printf("%d\t", i);
+		}
+	}
+
+	return 0;
+}
