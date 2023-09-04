@@ -1,0 +1,29 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <time.h>
+//a game,Bulls and Cows,1-100,input a number for user,prompt based on data entry.
+int main()
+{
+	int value;
+	int num;
+	srand((unsigned int)time(NULL));//随机数种子
+	num = rand() % 100 + 1;
+	while (1)
+	{
+		scanf("%d", &value);
+		if (num > value)
+		{
+			printf("input number is too small\n");
+		}
+		else if (num < value)
+		{
+			printf("input number is too big\n");
+		}
+		else
+		{
+			printf("Congratulation!Bingo!");
+			break;
+		}
+	}
+	return 0;
+}
