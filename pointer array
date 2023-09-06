@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	//指针数组存储指针变量
+	int a = 10;
+	int b = 20;
+	int c = 30;
+	int i;
+	int * arr[3] = { &a, &b, &c };
+	*arr[2] = 123;
+	for (i = 0; i < 3;i++)
+	printf("%d\n", *arr[i]=i);
+	return 0;
+}
