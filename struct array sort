@@ -1,0 +1,48 @@
+#include <stdio.h>
+typedef struct stu
+{
+	int id;
+	char name[21];
+	int age;
+	char sex;
+	int score;
+}student;
+void Bubblesort(student*ss, int len)
+{
+	int i, j;
+	student temp;
+	for (i = 0; i < len - 1;i++)
+	{
+		for (j = 0; j < len - i - 1; j++)
+		{
+			if (ss[j].score < ss[j + 1].score)
+			{
+				temp = ss[j + 1];//赋值，两边类型都是相同的
+				ss[j + 1] = ss[j];
+				ss[j] = temp;
+			}
+		}
+
+	}
+}
+int main()
+{
+	int i;
+	student ss[5];
+	for (i = 0; i < 5; i++)
+	{
+		scanf("%d%s%d%s%d", &ss[i].id, ss[i].name, &ss[i].age, &ss[i].sex, &ss[i].score);
+	}
+	Bubblesort(ss, 5);
+	for (i = 0; i < 5; i++)
+	{
+		printf("编号：%d\n", ss[i].id);
+		printf("name:%s\n", ss[i].name);
+		printf("age:%d\n", ss[i].age);
+		printf("sex:%s\n", ss[i].sex == "M" ? "男" : "女");
+		printf("score:%d\n", ss[i].score);
+		
+		printf("\n");
+	}
+	return 0;
+}
